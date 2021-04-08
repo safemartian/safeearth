@@ -734,11 +734,19 @@ nav:hover {
   .about-img {
     width: 43%;
     height: 50%;
+    position: relative;
+    iframe {
+      width: 100%;
+      height: 255px;
+      margin-top: 100px;
+      margin-left: -80px;
+      position: absolute;
+    }
     img {
-      margin-top: -80px;
+      position: absolute;
+      margin-top: 300px;
       margin-left: 80px;
-      height: 100%;
-      width: 90%;
+      height: 300px;
       animation: moon 600s linear infinite;
       user-select: none;
       pointer-events: none;
@@ -812,27 +820,27 @@ nav:hover {
 @keyframes moon {
   0% {
     transform: rotate(0deg);
-    margin-top: -20px;
+    margin-top: 300px;
     margin-left: -40px;
   }
   25% {
     transform: rotate(360deg);
-    margin-top: 20px;
+    margin-top: 200px;
     margin-left: 70px;
   }
   35% {
     transform: rotate(0deg);
-    margin-top: 29px;
+    margin-top: 290px;
     margin-left: 35px;
   }
   50% {
     transform: rotate(360deg);
-    margin-top: 70px;
+    margin-top: 200px;
     margin-left: 50px;
   }
   100% {
     transform: rotate(0deg);
-    margin-top: -20px;
+    margin-top: 300px;
     margin-left: -40px;
   }
 }
@@ -1136,6 +1144,18 @@ nav:hover {
     .about-text {
       width: 70%;
     }
+    .about-img {
+      display: flex;
+      justify-content: flex-end;
+      iframe {
+        width: 85%;
+        height: 200px;
+        margin-right: 50px;
+        margin-top: 100px;
+        margin-left: -80px;
+        position: absolute;
+      }
+    }
   }
   .roadmap {
     margin-top: 140px;
@@ -1279,9 +1299,22 @@ nav:hover {
   }
 
   .about {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     margin-top: -90px;
     .about-text {
       width: 70%;
+    }
+    .about-img {
+      iframe {
+        width: 85%;
+        height: 200px;
+        margin-right: 50px;
+        margin-top: 100px;
+        margin-left: -80px;
+        position: absolute;
+      }
     }
   }
   .roadmap {
@@ -1424,12 +1457,39 @@ nav:hover {
     }
   }
   .about {
+    width: 100%;
     margin-top: -120px;
-    .about-text {
-      width: 80%;
-    }
-    .about-img {
-      display: none;
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .about-text {
+        flex-direction: column;
+        width: 90%;
+      }
+      .about-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h3 {
+          width: 90%;
+          margin-top: 30px;
+        }
+        img {
+          display: none;
+        }
+        iframe {
+          width: 90%;
+          height: 300px;
+          margin-top: 20px;
+          position: relative;
+          margin-left: 0px;
+          margin-right: 0px;
+        }
+      }
     }
     .about-bottom {
       width: 80%;
@@ -1601,12 +1661,43 @@ nav:hover {
         font-size: 15px;
       }
     }
-    .about-img {
-      display: none;
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .about-text {
+        flex-direction: column;
+        width: 90%;
+      }
+      .about-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h3 {
+          width: 100%;
+          margin-top: 30px;
+        }
+        img {
+          display: none;
+        }
+        iframe {
+          width: 90%;
+          height: 200px;
+          margin-top: 20px;
+          position: relative;
+          margin-left: 0px;
+          margin-right: 0px;
+        }
+      }
     }
+
     .about-bottom {
-      width: 80%;
+      width: 100%;
       height: 430px;
+      align-items: center;
       flex-direction: column-reverse;
       .hero-buttons {
         margin-top: 0px;
@@ -1626,8 +1717,9 @@ nav:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 100%;
+        width: 90%;
         margin-top: -10px;
+        margin-right: 0px;
         div {
           margin-top: 10px;
           p {
@@ -1794,11 +1886,40 @@ nav:hover {
         font-size: 14px;
       }
     }
-    .about-img {
-      display: none;
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .about-text {
+        flex-direction: column;
+        width: 90%;
+      }
+      .about-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h3 {
+          width: 100%;
+          margin-top: 30px;
+        }
+        img {
+          display: none;
+        }
+        iframe {
+          width: 90%;
+          height: 150px;
+          margin-top: 20px;
+          position: relative;
+          margin-left: 0px;
+          margin-right: 0px;
+        }
+      }
     }
     .about-bottom {
-      width: 90%;
+      width: 100%;
       height: 430px;
       flex-direction: column-reverse;
       .hero-buttons {
@@ -1820,7 +1941,7 @@ nav:hover {
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
-        margin-top: 46px;
+        margin-top: 0px;
         div {
           margin-top: 10px;
           p {
