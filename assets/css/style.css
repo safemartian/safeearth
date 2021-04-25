@@ -156,6 +156,11 @@ body {
     top: 90px;
 }
 
+#header #google_translate_element-donations {
+    position: absolute;
+    left: 15px;
+    top: 100px;
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -672,6 +677,17 @@ section#cliens a {
 
 @media (max-width: 575px) {
     #header #google_translate_element {
+        position: absolute;
+        background: white;
+        width: 100%;
+        left: 0;
+        height: 100%;
+        top: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #header #google_translate_element-donations {
         position: absolute;
         background: white;
         width: 100%;
