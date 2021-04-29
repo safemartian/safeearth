@@ -2542,11 +2542,11 @@ figure.bounce {
   margin: 0 auto;
 }
 
-img.mars-img-header {
+.fly-to-mars {
   width: 70px;
   height: auto;
   position: absolute;
-  top: 7px;
+  /*top: 7px;*/
   right: 30px;
 }
 
