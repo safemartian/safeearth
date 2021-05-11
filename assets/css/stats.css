@@ -1,0 +1,257 @@
+.chart {
+    width: 100%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: var(--fonts);
+}
+
+.chart h1 {
+    margin-top: 50px;
+    margin-bottom: 90px;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-style: italic;
+    padding: 0px 30px 5px 20px;
+    border-bottom: solid 4px white;
+    border-radius: 65px 15px;
+    font-weight: 700;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.chart .live {
+    width: 57%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.chart .records .part {
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.chart .records .part a {
+    margin-top: -15px;
+}
+
+.chart .records .part a button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 15px;
+    font-weight: 800;
+    width: 170px;
+    height: 40px;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.chart .live .part a button:hover {
+    background: none;
+    color: white;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px #ff5e5e;
+    border-radius: 70px;
+}
+
+.chart .live .part .cur::before {
+    content: "$";
+    margin-right: 4px;
+}
+
+.chart .live .part .po {
+    color: #00be00;
+}
+
+.chart .live .part .po::before {
+    content: "+";
+    margin-right: 4px;
+}
+
+.chart .live .part .po::after {
+    content: "%";
+    margin-left: 4px;
+}
+
+.chart .live .part .ne {
+    color: red;
+}
+
+.chart .live .part .ne::before {
+    content: "-";
+    margin-right: 4px;
+}
+
+.chart .live .part .ne::after {
+    content: "%";
+    margin-left: 4px;
+}
+
+.chart .live .part h3 {
+    font-size: 19px;
+}
+
+.chart .live .part .mo:before {
+    content: "$";
+    margin-right: 4px;
+}
+
+.chart .live .part p {
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 13px;
+    opacity: 0.5;
+    font-weight: 400;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.chart .records {
+    margin-top: 20px;
+    width: 1000px;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.chart .records .part {
+    height: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.chart .records .part img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.chart .records .part h3 {
+    font-size: 20px;
+    color: #37517e;
+}
+
+.chart .records .part p {
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 13px;
+    opacity: 0.5;
+    font-weight: 400;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.chart .records .part .marketcap::before {
+    content: "$";
+    margin-right: 4px;
+}
+
+.chart .records .part .liquid::before {
+    content: "$";
+    margin-right: 4px;
+}
+
+@media (max-width: 1024px) {
+    .chart .records {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .chart {
+        height: 420px;
+    }
+
+    .chart .records {
+        flex-direction: column-reverse;
+        margin-bottom: -100px;
+        gap: 0;
+    }
+
+    .chart .records .part {
+        max-height: 71px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 0 5px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .why-us .img {
+        min-height: 200px;
+    }
+}
