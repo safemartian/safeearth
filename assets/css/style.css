@@ -545,6 +545,7 @@ body {
 #hero .logo-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: absolute;
     padding: 20px;
 }
@@ -558,7 +559,7 @@ body {
     transform: scale(1.05);
 }
 
-#hero .logo-container a img {
+#hero .logo-container .invert-colors {
     -webkit-filter: grayscale(1);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
@@ -612,7 +613,6 @@ section#cliens a {
 
 .news-element img {
     width: 142px;
-    height: 17px;
 }
 
 @media (max-width: 991px) {
