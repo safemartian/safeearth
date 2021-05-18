@@ -543,15 +543,14 @@ body {
 }
 
 #hero .logo-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    padding: 20px;
+    position: static;
+    margin: 6vh 0 8vh 0;
 }
 
 #hero .news-element {
-    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 #hero .logo-container a:hover {
@@ -617,7 +616,7 @@ section#cliens a {
 
 @media (max-width: 991px) {
     #hero {
-        height: auto;
+        height: 100%;
         text-align: center;
     }
 
@@ -800,17 +799,16 @@ section#cliens a {
     }
 
     #hero .logo-container {
-        display: flex;
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        flex-wrap: wrap;
+        position: static;
     }
 
     #hero .logo-container a {
         padding: 20px;
-        width: 50%;
+    }
+
+    #hero .logo-container a:hover {
+        transition: 0.1s ease;
+        transform: scale(1.05);
     }
 
     #hero .news-element {
@@ -1327,12 +1325,6 @@ section {
     .modal-body {
         max-width: 100%;
     }
-
-    #hero .logo-container {
-        position: static !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
 }
 
 @media (min-width: 769px) {
@@ -1340,6 +1332,10 @@ section {
         display: flex;
         align-items: center;
         justify-content: flex-end;
+    }
+
+    #hero .logo-container {
+        margin: 8vh 0 0 0;
     }
 }
 
