@@ -1,6 +1,6 @@
 .chart {
     width: 100%;
-    height: 150px;
+    height: calc(100% - 80vh);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -236,7 +236,7 @@
 
     .chart .records {
         flex-direction: column-reverse;
-        margin-bottom: -100px;
+        height: 100%;
         gap: 0;
     }
 
@@ -253,5 +253,11 @@
 @media (max-width: 575px) {
     .why-us .img {
         min-height: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .chart {
+        padding-top: 0;
     }
 }
