@@ -612,6 +612,8 @@ section#cliens a {
 
 .news-element img {
     width: 142px;
+    height: 35px;
+    margin: 0 auto;
 }
 
 @media (max-width: 991px) {
